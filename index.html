@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizonte – Gestión de Riesgos</title>
+  <link rel="stylesheet" href="stylos.css" />
+</head>
+<body>
+
+  <header>
+    <img src="img/img-riesgos.png" alt="Logo Horizonte" />
+    <nav>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#contacto">Contacto</a>
+      
+      <a href="#inicio">Inicio</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Horizonte</h1>
+    <p>Software inteligente para anticipar, evaluar y mitigar riesgos en tu organización.</p>
+  </section>
+
+  <section class="features" id="funcionalidades">
+    <div class="feature">
+      <h3>Identificación de Riesgos</h3>
+      <p>Detecta amenazas en tiempo real con análisis automatizado.</p>
+    </div>
+    <div class="feature">
+      <h3>Evaluación y Priorización</h3>
+      <p>Clasifica los riesgos por impacto y probabilidad.</p>
+    </div>
+    <div class="feature">
+      <h3>Planes de Mitigación</h3>
+      <p>Implementa acciones estratégicas para minimizar daños.</p>
+    </div>
+    <div class="feature">
+      <h3>Reportes Visuales</h3>
+      <p>Visualiza los riesgos y su evolución con gráficos y alertas.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonial">
+      "Horizonte ha transformado nuestra forma de manejar riesgos. Ahora tomamos decisiones más rápidas y seguras."
+      <strong>— Laura Martínez, CEO de TechCorp</strong>
+    </div>
+    <div class="testimonial">
+      "La evaluación automática nos ahorra tiempo y reduce errores humanos. Muy recomendado."
+      <strong>— Jorge Pérez, Gerente de Operaciones</strong>
+    </div>
+  </section>
+
+  <section class="cta" id="contacto">
+    <h2>¿Quieres probar Horizonte?</h2>
+    <p>Solicita una demo gratuita y comienza a tomar decisiones informadas.</p>
+    <a href="mailto:contacto@horizonte.com" id="demo-button">Solicitar Demo</a>
+  </section>
+
+  <section>
+    <form id="contact-form" action="#" method="POST">
+      <h2>Contáctanos</h2>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="Tu correo" required />
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Horizonte. Todos los derechos reservados.
+    <div class="social-footer">
+      <a href="#">🔵</a>
+      <a href="#">🐦</a>
+      <a href="#">💼</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('demo-button').addEventListener('click', function(event) {
+      alert('Gracias por solicitar una demo. Te contactaremos pronto.');
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Gracias por contactarnos, responderemos pronto.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
